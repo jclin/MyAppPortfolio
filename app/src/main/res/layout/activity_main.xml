@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/myNanoDegreeApps"
+        android:id="@+id/textView"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignStart="@+id/textView">
+
+        <Button
+            style="@style/projectButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/spotifyStreamer"
+            android:id="@+id/button"
+            android:onClick="onSpotifyStreamerButtonClick"/>
+
+        <Button
+            style="@style/projectButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scoresApp"
+            android:id="@+id/button2"
+            android:onClick="onScoresAppButtonClick"/>
+
+        <Button
+            style="@style/projectButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/libraryApp"
+            android:id="@+id/button3"
+            android:onClick="onLibraryAppButtonClick"/>
+
+        <Button
+            style="@style/projectButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buildItBigger"
+            android:id="@+id/button4"
+            android:onClick="onBuildItBiggerButtonClick"/>
+
+        <Button
+            style="@style/projectButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/xyzReader"
+            android:id="@+id/button5"
+            android:onClick="onXYZReaderButtonClick"/>
+
+        <Button
+            style="@style/capstoneButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/capstoneMyApp"
+            android:id="@+id/button6"
+            android:onClick="onCapstoneProjectButtonClick"/>
+    </LinearLayout>
+</RelativeLayout>
